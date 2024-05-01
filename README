@@ -1,0 +1,19 @@
+# STEP 1
+
+Please make sure you read the documentation for an explanation of the project.
+
+# STEP 2 
+
+Install the requirements.txt file
+
+# STEP 3 
+
+Run uvicorn main:app --reload to load your FastApi in order to see the visualisations.
+
+# How the logic works: Currently all datasets are analyzed and visualisations could be directly created. But if you want to run all the code, you should do it in this specific order: 
+
+# First: Run the web_data_extractor.py
+# Second: Run bmw_data_processor.py
+# Third: Run uvicorn main:app --reload
+
+# Please note, that if you do intend to run bmw_data_processor and web_data_extractor, it is possible you might have to set the specific paths of the csv files in analyse_data.py, web_data_extractor.py, bmw_data_processor.py. 
